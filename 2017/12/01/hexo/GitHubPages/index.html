@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.skyliu.site/images/hexo/github-setting.png">
 <meta property="og:image" content="http://www.skyliu.site/images/hexo/custom-domain.png">
-<meta property="og:updated_time" content="2017-12-02T07:26:44.876Z">
+<meta property="og:updated_time" content="2017-12-02T07:35:47.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 部署到 GitHubPages">
 <meta name="twitter:description" content="背景:  GitHubPages 可以免费托管静态文件, 而且自带 cdn 加速 托管到 GitHubPages 不用自己倒腾服务器, 让自己更专注于写博客  创建 github 仓库GitHub Pages 读取的仓库是YOUR-USERNAME.github.io所以仓库名必须是YOUR-USERNAME.github.io 部署 hexo 到 GitHubPages">
@@ -345,7 +345,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-02T15:26:44+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-02T15:35:47+08:00">
                 2017-12-02
               </time>
             
@@ -436,10 +436,9 @@
 <li><p>配置 hexo</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">[repository</span> <span class="string">url]</span> <span class="comment"># github 仓库地址</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span>       <span class="comment"># 分支名称(master)</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span>     <span class="comment"># 自定义提交信息, 默认是 Site updated: &#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125;</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>部署 hexo 到 GitHubPages<br><code>hexo deploy -g</code></p>
+<li><p>部署 hexo 到 GitHubPages<br><code>hexo clean # 清除缓存和之前生成的静态文件</code><br><code>hexo deploy --setup # 上传到静态文件github</code></p>
 <blockquote>
 <ol>
-<li><code>-g</code>: 部署前先生成静态文件到<code>public</code>目录, 上传到github的其实就是这个目录下的静态文件</li>
 <li>hexo 会以<code>~/.gitconfig</code>里面配置的<code>user.name</code>和<code>user.email</code>作为提交人身份信息</li>
 <li>第一次部署时会要求输入github用户名和密码, 后续不用再输入</li>
 <li>部署成功后可直接用过<code>YOUR-USERNAME.github.io</code>访问hexo, 因为GitHubPages会强制升级成https, 所以<code>next不支持https的相关功能会失效</code>(比如<code>百度分享</code>)</li>
