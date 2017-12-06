@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包`tar -zxvf node-v9">
+<meta name="description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包tar -zxvf node-v9.">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo + next 搭建个人博客">
 <meta property="og:url" content="http://www.skyliu.site/2017/11/27/hexo/hexo/index.html">
 <meta property="og:site_name" content="SkyLiu">
-<meta property="og:description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包`tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/local/``mv">
+<meta property="og:description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/local/mv /u">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-01T20:30:59.018Z">
+<meta property="og:updated_time" content="2017-12-06T11:28:46.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo + next 搭建个人博客">
-<meta name="twitter:description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包`tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/local/``mv">
+<meta name="twitter:description" content="hexo安装需要预先安装 git 和 nodenode二进制文件下载链接: https://nodejs.org/dist/latest/node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中1234567891011121314# 解压 node 二进制压缩包tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/local/mv /u">
 
 
 
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-02T04:30:59+08:00">
-                2017-12-02
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-06T19:28:46+08:00">
+                2017-12-06
               </time>
             
           </span>
@@ -421,7 +421,7 @@
       
 
       
-        <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo安装</a></h2><p>需要预先安装 <code>git</code> 和 <code>node</code><br>node二进制文件下载链接: <a href="https://nodejs.org/dist/latest/" target="_blank" rel="noopener">https://nodejs.org/dist/latest/</a><br>node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压 node 二进制压缩包</span></span><br><span class="line">`tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/<span class="built_in">local</span>/`</span><br><span class="line">`mv /usr/<span class="built_in">local</span>/node-v9.2.0-linux-x64 /usr/<span class="built_in">local</span>/nodejs`</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加环境变量 PATH 添加 node bin 目录全路径</span></span><br><span class="line">vi ~/.bashrc</span><br><span class="line"><span class="built_in">export</span> NODE_BIN=<span class="string">"/usr/local/nodejs/bin"</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$&#123;NODE_BIN&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使环境变量生效</span></span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 hexo; npm 默认在 node bin 目录中</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+        <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo安装</a></h2><p>需要预先安装 <code>git</code> 和 <code>node</code><br>node二进制文件下载链接: <a href="https://nodejs.org/dist/latest/" target="_blank" rel="noopener">https://nodejs.org/dist/latest/</a><br>node二进制可执行压缩包解压后需要将bin目录全路径加入环境变量PATH中<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压 node 二进制压缩包</span></span><br><span class="line">tar -zxvf node-v9.2.0-linux-x64.tar.gz -C /usr/<span class="built_in">local</span>/</span><br><span class="line">mv /usr/<span class="built_in">local</span>/node-v9.2.0-linux-x64 /usr/<span class="built_in">local</span>/nodejs</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加环境变量 PATH 添加 node bin 目录全路径</span></span><br><span class="line">vi ~/.bashrc</span><br><span class="line"><span class="built_in">export</span> NODE_BIN=<span class="string">"/usr/local/nodejs/bin"</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$&#123;NODE_BIN&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使环境变量生效</span></span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 hexo; npm 默认在 node bin 目录中</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <h2 id="hexo基本命令"><a href="#hexo基本命令" class="headerlink" title="hexo基本命令"></a><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">hexo基本命令</a></h2><ol>
 <li>建站<br><code>hexo init &lt;hexo-folder&gt;</code><br><code>cd &lt;hexo-folder&gt;</code><br><code>npm install</code></li>
@@ -619,7 +619,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -630,7 +630,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -641,7 +641,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
