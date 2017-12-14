@@ -1,0 +1,9 @@
+字体调整:
+  http://theme-next.iissnan.com/faqs.html#custom-font
+  next/source/css/_variables/custom.styl
+
+margin-left:   左边空白像素(px)
+margin-right:  右边空白像素(px)
+margin-top:    顶边空白像素(px)
+margin-bottom: 底边空白像素(px)
+
